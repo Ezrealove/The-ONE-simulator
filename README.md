@@ -6,4 +6,4 @@ The ONE is a simulation environment that is capable of
 
 ONE can import mobility data from real-world traces or other mobility generators. It can also produce a variety of reports from node movement to message passing and general statistics.
 
-其中我自己写的路由算法。
+其中有我自己写的路由算法。
