@@ -1,0 +1,30 @@
+Scenario.name = Addstaticnodesinbatches
+
+
+Scenario.nrofHostGroups = 5
+
+Group.nrofHosts = 1  
+Group.movementModel = StationaryMovement
+Group.nodeLocation = 500,500
+ 
+
+Group1.groupID = b
+Group1.movementModel = MapRouteMovement 
+# MapRouteMovement
+Group1.routeFile = data\path   
+# routeFile
+Group1.routeType = 2
+Group1.nrofHosts = 5
+Group1.waitTime = 0, 0
+Group1.speed = 0, 0
+
+MapBasedMovement.nrofMapFiles = 1
+MapBasedMovement.mapFile1 =data/path/mapFile.wkt
+ 
+# mapFile.wkt
+LINESTRING (100 100, 200.0 200.0, 300 300, 400 400, 500.0 500.0)
+
+
+
+
+ 

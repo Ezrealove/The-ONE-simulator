@@ -1,0 +1,38 @@
+Scenario.name = bookdemo1
+Scenario.nrofHostGroups = 2
+Group.nrofHosts =200
+Group.movementModel = ShortestPathMapBasedMovement
+Group.bufferSize = 5M
+btInterface.transmitSpeed = 250k
+Group.router = DirectDeliveryRouter
+Group1.groupID = n
+Group2.groupID = p
+Group2.nrofHosts =10
+Group2.nroInterfaces=2
+Group2.interface1=btInterface
+Group2.interface2=highspeedInterface
+Group2.movementModel = BusMovement
+Group2.routeFile = data/HelsinkiMedium/A_bus.wkt
+Group2.routeType = 2
+Group2.busControlSystemNr = 1
+Group2.bufferSize = 100M
+Group2.speed = 2.8, 5.6
+Events.nrof =2
+Events1.class = MessageEventGenerator
+Events2.class = MessageEventGenerator
+Events1.interval = 25,35
+Events2.interval = 250,350
+Events1.size=500k,1M
+Events2.size=500k,1M
+# range of message source/destination addresses
+Events1.hosts=0,199
+Events2.hosts = 200,209
+# Message ID prefix
+Events1.prefix = w
+Events2.prefix = e
+Report.reportDir =reports_paper/DirectDliverrouter
+Report.nrofReports = 3
+# Report classes to load
+Report.report1 = MessageStatsReport
+Report.report2 = DeliveredMessagesReport
+Report.report3 = MessageDelayReport

@@ -1,0 +1,20 @@
+Message stats for scenario x-topo3
+sim_time: 43200.1000
+created: 8640
+started: 40547
+relayed: 40547
+aborted: 0
+dropped: 24129
+removed: 0
+delivered: 7887
+delivery_prob: 0.9128
+response_prob: 0.0000
+overhead_ratio: 4.1410
+latency_avg: 0.2734
+latency_med: 0.3000
+hopcount_avg: 2.0837
+hopcount_med: 2
+buffertime_avg: 17971.2222
+buffertime_med: 17970.1000
+rtt_avg: NaN
+rtt_med: NaN
